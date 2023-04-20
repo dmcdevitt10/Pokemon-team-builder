@@ -11,7 +11,7 @@ const GlobalContextProvider = (props) => {
   const reducer = (state, action) => {
     switch (action.type) {
       case "ADD_TO_TEAM":
-        return { ...state, team: [state.team, action.payload] };
+        return { ...state, team: [...state.team, action.payload] };
       default:
         return state;
     }

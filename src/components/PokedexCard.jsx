@@ -15,7 +15,7 @@ const PokedexCard = (props) => {
     <div className="card">
       <img src={props.poke.img} className="poke-img" />
       <h5>{props.poke.name}</h5>
-      <button onClick={addToTeam}>Add to Teamd</button>
+      <button onClick={addToTeam}>Add to Team</button>
     </div>
   );
 };
